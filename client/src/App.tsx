@@ -1,16 +1,23 @@
+/** Operative Ledger style reminder: routes serve an editorial public dossier, not a generic app shell. */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Router as WouterRouter, Switch } from "wouter";
+import { useHashLocation } from "wouter/use-hash-location";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import Features from "./pages/Features";
+import ProjectProfile from "./pages/ProjectProfile";
+import "./dossier-refinements.css";
 
 
-function Router() {
+function SiteRoutes() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/features"} component={Features} />
+      <Route path={"/project"} component={ProjectProfile} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
@@ -30,10 +37,12 @@ function App() {
         defaultTheme="light"
         // switchable
       >
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
+        <WouterRouter hook={useHashLocation}>
+          <TooltipProvider>
+            <Toaster />
+            <SiteRoutes />
+          </TooltipProvider>
+        </WouterRouter>
       </ThemeProvider>
     </ErrorBoundary>
   );
