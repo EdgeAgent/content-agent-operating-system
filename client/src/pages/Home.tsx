@@ -2,7 +2,7 @@
  * Operative Ledger style reminder: editorial layout, paper/ink contrast, pink routing lines,
  * rare chartreuse proof signals, deliberately asymmetric composition, and no generic UI cards.
  */
-import { ArrowDown, ArrowRight, Check, ExternalLink, FileCheck2, Lock, ShieldCheck, UserRoundCheck } from "lucide-react";
+import { ArrowDown, ArrowRight, FileCheck2, Github, ShieldCheck } from "lucide-react";
 import { Link } from "wouter";
 import { SiteHeader } from "@/components/SiteHeader";
 
@@ -38,9 +38,11 @@ export default function Home() {
                 <p className="eyebrow eyebrow-light">CONTROLLED CONTENT OPERATIONS</p>
                 <h1>A content agent that <span>does work.</span></h1>
                 <p className="hero-lede">A 30-day rollout for a controlled multi-agent production pipeline: source material in, approved content out, and a receipt for every public action.</p>
-                <div className="hero-actions">
+                <div className="hero-actions hero-action-deck">
                   <button type="button" className="button-primary" onClick={jumpToWorkflow}>Inspect the workflow <ArrowDown size={17} /></button>
                   <Link href="/features" className="button-secondary">Read feature guide <ArrowRight size={17} /></Link>
+                  <Link href="/project" className="button-secondary">View project profile <ArrowRight size={17} /></Link>
+                  <a href="https://github.com/EdgeAgent/content-agent-operating-system" target="_blank" rel="noreferrer" className="button-secondary">View repository <Github size={17} /></a>
                 </div>
               </div>
               <aside className="operating-position">

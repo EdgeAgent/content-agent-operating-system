@@ -1,0 +1,4 @@
+- [x] Audit the public GitHub repository profile, README presentation, and project links.
+- [x] Add professional repository-facing visual assets and an image-rich README hero section.
+- [x] Refine the title-area actions and visual content across the live project pages.
+- [ ] Publish the updated main and GitHub Pages branches, then verify the live public experience.
