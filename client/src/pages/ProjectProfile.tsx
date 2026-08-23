@@ -64,7 +64,7 @@ export default function ProjectProfile() {
               <h2>From field brief to implementation guide.</h2>
               <p>This public project is built from the supplied <em>Content Agent Operating System</em> field brief. The README and feature guide translate its operating model, role separation, rollout sequence, capability choices, and control rules into a navigable reference.</p>
               <div className="source-actions">
-                <a href="https://github.com" target="_blank" rel="noreferrer" className="action-link action-link-dark"><Github size={18} /> View repository <ArrowUpRight size={16} /></a>
+                <a href="https://github.com/EdgeAgent/content-agent-operating-system" target="_blank" rel="noreferrer" className="action-link action-link-dark"><Github size={18} /> View repository <ArrowUpRight size={16} /></a>
                 <Link href="/features" className="action-link"><FileText size={18} /> Read the feature guide <ArrowUpRight size={16} /></Link>
               </div>
             </div>
