@@ -1,8 +1,8 @@
 - [x] Audit the public GitHub repository profile, README presentation, and project links.
 - [x] Add professional repository-facing visual assets and an image-rich README hero section.
 - [x] Refine the title-area actions and visual content across the live project pages.
-- [ ] Publish the updated main and GitHub Pages branches, then verify the live public experience.
+- [x] Archive the obsolete GitHub Pages branch and remove the standalone site deployment.
 - [x] Replace GitHub Pages-first README calls to action with repository-first navigation and assets.
 - [x] Remove public-site framing from repository metadata and documentation.
-- [ ] Publish and verify the repository-first README experience on GitHub.
+- [x] Publish and verify the repository-first README experience on GitHub.
 - [x] Unpublish the standalone GitHub Pages deployment while preserving the public repository.
